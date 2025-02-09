@@ -1,0 +1,113 @@
+import React from 'react';
+import { Github, Linkedin, Instagram, Mail, ExternalLink } from 'lucide-react';
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-slate-900 text-white">
+      {/* Hero Section */}
+      <header className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 p-6">
+        <div className="max-w-4xl text-center">
+          <h1 className="text-5xl font-bold mb-4">Khalil Chahi</h1>
+          <p className="text-xl text-slate-300 mb-6">Full Stack Developer | 3D Artist | Game Developer</p>
+          <div className="flex justify-center space-x-4">
+            <Mail className="w-6 h-6 text-slate-300 hover:text-white cursor-pointer" />
+            <Github className="w-6 h-6 text-slate-300 hover:text-white cursor-pointer" />
+            <Linkedin className="w-6 h-6 text-slate-300 hover:text-white cursor-pointer" />
+            <Instagram className="w-6 h-6 text-slate-300 hover:text-white cursor-pointer" />
+          </div>
+        </div>
+      </header>
+
+      {/* About Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">About Me</h2>
+          <p className="text-slate-300 mb-4">
+            Versatile multimedia professional based in Casablanca, Morocco. I combine technical expertise in full-stack development
+            with creative skills in 3D animation and game development. My background in e-commerce and multimedia editing allows me
+            to bring a unique perspective to digital projects.
+          </p>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-6 bg-slate-800">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-slate-700 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">Web Development</h3>
+              <ul className="text-slate-300 space-y-2">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js</li>
+                <li>MySQL</li>
+                <li>Python</li>
+                <li>C#</li>
+              </ul>
+            </div>
+            <div className="bg-slate-700 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">3D & Animation</h3>
+              <ul className="text-slate-300 space-y-2">
+                <li>Blender</li>
+                <li>Unity 3D</li>
+                <li>Premiere Pro</li>
+                <li>After Effects</li>
+              </ul>
+            </div>
+            <div className="bg-slate-700 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">Audio Production</h3>
+              <ul className="text-slate-300 space-y-2">
+                <li>FL Studio</li>
+                <li>Ableton Live</li>
+                <li>Sound Design</li>
+                <li>Music Production</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-slate-800 p-6 rounded-lg">
+              <div className="aspect-video bg-slate-700 rounded-lg mb-4"></div>
+              <h3 className="text-xl font-bold mb-2">Stickershub</h3>
+              <p className="text-slate-300 mb-4">E-commerce platform for custom stickers with over 1,500 followers</p>
+              <div className="flex items-center space-x-2">
+                <ExternalLink className="w-4 h-4" />
+                <span className="text-sm text-slate-300">View Project</span>
+              </div>
+            </div>
+            <div className="bg-slate-800 p-6 rounded-lg">
+              <div className="aspect-video bg-slate-700 rounded-lg mb-4"></div>
+              <h3 className="text-xl font-bold mb-2">3D Game Project</h3>
+              <p className="text-slate-300 mb-4">Unity-based game development showcase</p>
+              <div className="flex items-center space-x-2">
+                <ExternalLink className="w-4 h-4" />
+                <span className="text-sm text-slate-300">View Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-6 bg-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
+          <p className="text-slate-300 mb-6">
+            Available for freelance projects and full-time opportunities
+          </p>
+          <p className="text-xl">
+            khalilchahi191919@gmail.com
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Portfolio;
